@@ -1,0 +1,18 @@
+Problem statement
+Create an EC2 Instances with the following parameters,
+
+Region: N. Virginia (us-east-1)
+Name: Windows-VM-Server
+Add additional tags: Instances, Volumes, Network Interfaces
+AMI: Microsoft Windows Server 2019 Base
+Architecture: 64-bit (x86)
+Instance Type: t2.micro
+VPC: Default VPC
+Security Group: Create security group
+Security group name: Windows-VM-Server
+Inbound rule: Allow RDP, HTTP, and HTTPS
+Source: 0.0.0.0/0
+Disk Size: 30 GB
+Volume Type: General Purpose SSD (gp2)
+Number of instances: 1
+Create a CloudWatch alarm when the CPU utilization of your EC2 instance that you have created above is greater than 90% for a period of 5 minutes, then an alarm is triggered.
